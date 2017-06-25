@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+}
+
+/** Nav Styles**/
+.nav_logo{
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    box-shadow: 3px 3px 10px #888888;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    transition: background-color 0.2s linear 0s;
+}
+.nav_logo:hover{
+  background: #0077be;
+}
+#main_nav{
+  height: 50px;
+  width: 100%;
+  background: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  position: fixed;
+  left: 100px;
+  overflow: hidden;
+  transition: width 1s ease 0s;
+}
+.nav_list{
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+.nav_link{
+  color: white;
+  margin-left: 30px;
+  display: inline-block;
+}
+/**End Nav Styles**/
+
+/**Content Wrap Styles**/
+.content_wrap{
+  border: dashed;
+  width:1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+/**End Content Wrap Styles**/
+
+/**About Page Styles**/
+.header{
+    margin-top: 100px;
+    height: 75px;
+    width: 100%;
+    border-bottom: 20px solid #0077be;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+.portrait{
+    background-image: url("../images/portrait_2.jpg");
+    background-size: cover;
+    background-position: left bottom;
+    border: dashed;
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin: 40px;
+    /**border-radius: 50%**/
+}
+.article{
+    border: 1px solid red;
+    width: 50%;
+    height: 800px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    float: right;
+}
+/**End About Page Styles**/
