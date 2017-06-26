@@ -4,74 +4,136 @@ body{
 
 /** Nav Styles**/
 .nav_logo{
+    z-index: 1;
     background-image: url("../images/logo.png");
     background-size: cover;
     box-shadow: 3px 3px 10px #888888;
     width: 100px;
     height: 100px;
+    text-align: center;
     position: fixed;
     transition: background-color 0.2s linear 0s;
+    cursor: pointer;
+}
+.nav_logo:hover .fa{
+  visibility: visible;
 }
 .nav_logo:hover{
   background: #0077be;
+  visibility: visible;
+}
+.fa{
+  color: white;
+  margin-top: 25px;
+  visibility: hidden;
 }
 #main_nav{
   height: 50px;
-  width: 100%;
+  width: 0%;
   background: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   position: fixed;
   left: 100px;
   overflow: hidden;
-  transition: width 1s ease 0s;
+  transition: width 0.5s ease 0s;
+  z-index: 1;
 }
-.nav_list{
-  position: fixed;
-  font-family: 'Roboto', sans-serif;
+#nav_list{
+  min-width: 450px;
+  visibility: visible;
+  transition: visibility 1s ease 1s;
 }
 .nav_link{
   color: white;
   margin-left: 30px;
   display: inline-block;
 }
+.nav_link:hover{
+  cursor: pointer;
+  color: #0077be;
+  
+}
 /**End Nav Styles**/
 
 /**Content Wrap Styles**/
 .content_wrap{
-  border: dashed;
+  border: solid white;
   width:1000px;
   height: 1000px;
   margin: 0 auto;
 }
 /**End Content Wrap Styles**/
 
+@keyframes fade {
+    from {
+      opacity: 0;}
+    to {
+      opacity: 1; }
+}
+
 /**About Page Styles**/
 .header{
     margin-top: 100px;
     height: 75px;
     width: 100%;
-    border-bottom: 20px solid #0077be;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
+.underline{
+  opacity: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #0077be;
+  animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+#hello{
+  opacity: 0;
+  display: inline;
+  margin-right: 30px;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+#im{
+  opacity: 0;
+  display: inline;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
 .portrait{
+    opacity: 0;
     background-image: url("../images/portrait_2.jpg");
     background-size: cover;
     background-position: left bottom;
-    border: dashed;
+    /**border: dashed;**/
     height: 400px;
     width: 400px;
     float: left;
     margin: 40px;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
     /**border-radius: 50%**/
 }
 .article{
-    border: 1px solid red;
+    /**border: 1px solid red;**/
+    opacity: 0;
     width: 50%;
     height: 800px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     float: right;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
 }
 /**End About Page Styles**/

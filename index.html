@@ -5,15 +5,19 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" >
     <script type="text/javascript" src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>David Ramirez</title>
 </head>
 <body>
     
     <!--Start Nav Section-->
-    <div class="nav_logo" onclick="toggleNavPanel ('main_nav')"></div>
+    <div class="nav_logo" onclick="toggleNavPanel ('main_nav')">
+        <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+    </div>
     <nav id="main_nav">
-        <ul nav_list>
-            <li class="nav_link 1">About</li>
+        <ul id="nav_list">
+            <li class="nav_link 1">Home</li>
             <li class="nav_link 2">Graphic Design</li>
             <li class="nav_link 3">Web Design</li>
             <li class="nav_link 4">Teaching</li>
@@ -24,8 +28,9 @@
     
     <div class="content_wrap">
         <div class="header">
-            <h1>Hello!</h1>
+            <h1 id="hello">Hello!</h1><h1 id="im">I'm David.</h1>
         </div>
+        <div class="underline"></div>
         <div class="portrait"></div>
         <div class="article">
             <h2> A Little About Me</h2>
