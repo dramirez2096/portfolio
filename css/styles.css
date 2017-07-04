@@ -10,6 +10,7 @@ body{
     box-shadow: 3px 3px 10px #888888;
     width: 100px;
     height: 100px;
+    border-radius: 0px 0px 15px 0px;
     text-align: center;
     position: fixed;
     transition: background-color 0.2s linear 0s;
@@ -55,14 +56,19 @@ body{
   
 }
 /**End Nav Styles**/
+.background{
+  background-color: #F5F5F5;
+  margin: none;
+  border: 20px solid white;
+}
 
 /**Content Wrap Styles**/
 .content_wrap{
-  border: solid white;
+  border: solid #F5F5F5;
   width:1000px;
   height: 1000px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #F5F5F5;
 }
 /**End Content Wrap Styles**/
 
